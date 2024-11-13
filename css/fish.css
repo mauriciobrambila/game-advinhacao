@@ -1,0 +1,141 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  /* margin: 10px 0; */
+  /* background: #6589F9; */
+  background-image: url('../img/background.png');
+  background-size: cover;
+}
+
+h1 {
+  font-family: 'NTR', sans-serif;
+  font-size: 55px;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+  line-height: 0.9;
+}
+
+audio {
+  color: #f3deac
+  /* margin-left: 10px;
+  margin-bottom: 10px; */
+  width: 1%;
+  justify-content: : flex-start;
+
+}
+
+#left-side {
+  float: left;
+}
+
+#logo {
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 550px;
+}
+
+#instructions {
+  margin-top: 20px;
+  margin-left: 30px;
+  width: 530px;
+  padding: 20px;
+  font-family: 'NTR', sans-serif;
+  font-size: 35px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  /* border: 2px solid black; */
+}
+
+.grid {
+  max-width: 670px;
+  float: right;
+  margin: 20px 90px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.card {
+  position: relative;
+  -webkit-transition: all .4s linear;
+  -o-transition: all .4s linear;
+  transition: all .4s linear;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  margin: 5px;
+}
+
+.card,
+.back,
+.front {
+  height: 150px;
+  width: 150px;
+}
+
+.back,
+.front {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.front {
+  background: #F4A460 url('../img/clam.png') no-repeat center center / contain;
+  border-radius: 15px;
+}
+
+.back {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  background-color: #6589F9;
+  border-radius: 15px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.selected {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.match .front {
+  background: rgba(101, 137, 249, 0) !important;
+}
+
+
+
+#fact {
+  margin-top: 20px;
+  margin-left: 210px;
+  width: 350px;
+  padding: 20px;
+  font-family: 'NTR', sans-serif;
+  font-size: 35px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  /* border: 2px solid black; */
+}
+
+#audio {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  opacity: 0.5;
+}
